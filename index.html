@@ -1,109 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hellena's Bakery Hub</title>
-
-<style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
-    background:#fff8f0;
-}
-
-header{
-    background:#ff8fab;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-
-nav{
-    background:#ffc2d1;
-    text-align:center;
-    padding:15px;
-}
-
-nav a{
-    text-decoration:none;
-    color:#333;
-    font-weight:bold;
-    margin:15px;
-}
-
-nav a:hover{
-    color:#d63384;
-}
-
-section{
-    padding:20px;
-}
-
-h2{
-    text-align:center;
-    color:#d63384;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    overflow:hidden;
-    text-align:center;
-}
-
-.card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.card h3{
-    color:#d63384;
-}
-
-.card p{
-    padding:0 10px 15px;
-}
-
-.video{
-    text-align:center;
-}
-
-iframe{
-    max-width:100%;
-    border:none;
-    border-radius:10px;
-}
-
-.contact{
-    background:white;
-    border-radius:10px;
-    padding:20px;
-    max-width:600px;
-    margin:auto;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-footer{
-    background:#ff8fab;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
-}
-</style>
-</head>
-
-<body>
 
 <header>
     <h1>🍰 Hellena's Bakery Hub</h1>
@@ -128,33 +23,41 @@ footer{
 <section id="products">
     <h2>Our Products</h2>
 
-    <div class="gallery">
+    <section id="products">
+    <h2>Our Products</h2>
 
-        <div class="card">
-            <img src="birthday-cake.jpg" alt="Birthday Cake">
-            <h3>Birthday Cakes</h3>
-            <p>Beautiful custom birthday cakes for all ages.</p>
-        </div>
-
-        <div class="card">
-            <img src="wedding-cake.jpg" alt="Wedding Cake">
-            <h3>Wedding Cakes</h3>
-            <p>Elegant wedding cakes designed for your special day.</p>
-        </div>
-
-        <div class="card">
-            <img src="cupcakes.jpg" alt="Cupcakes">
-            <h3>Cupcakes</h3>
-            <p>Freshly baked cupcakes in a variety of flavors.</p>
-        </div>
-
-        <div class="card">
-            <img src="cupcakes.jpg" alt="Cookies">
-            <h3>Cookies</h3>
-            <p>Sweet homemade cookies perfect for every occasion.</p>
-        </div>
-
+```
+<div class="gallery">
+    <div>
+        <img src="birthday-cake.jpg" alt="Birthday Cake">
+        <h3>Birthday Cakes</h3>
+        <p>Custom birthday cakes made with love for every celebration.</p>
     </div>
+
+    <div>
+        <img src="wedding-cake.jpg" alt="Wedding Cake">
+        <h3>Wedding Cakes</h3>
+        <p>Elegant wedding cakes designed to make your special day unforgettable.</p>
+    </div>
+
+    <div>
+        <img src="cupcakes.jpg" alt="Cupcakes">
+        <h3>Cupcakes</h3>
+        <p>Freshly baked cupcakes available in a variety of flavors and designs.</p>
+    </div>
+
+    <div>
+        <img src="cupcakes.jpg" alt="Cookies">
+        <h3>Cookies</h3>
+        <p>Sweet homemade cookies perfect for snacks, gifts, and events.</p>
+    </div>
+</div>
+```
+
+</section>
+
+
+       
 </section>
 
 <section id="video">
@@ -164,7 +67,7 @@ footer{
         <iframe
             width="800"
             height="450"
-            src="https://www.youtube.com/embed/Kt2y8ZhpPU0"
+            src="https://youtu.be/1CbzmrBep6A?si=3fjsMzCZFJQHbi5Q"
             title="Bakery Video"
             allowfullscreen>
         </iframe>
