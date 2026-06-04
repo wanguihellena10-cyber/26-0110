@@ -1,164 +1,129 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hellena's Bakery Hub</title>
-</head>
-<body>
 
 ```
-<!-- Navigation Menu -->
-<nav>
-    <a href="#home">Home</a> |
-    <a href="#gallery">Gallery</a> |
-    <a href="#products">Products</a> |
-    <a href="#orders">Orders</a> |
-    <a href="#contact">Contact</a>
-</nav>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin:0;
+        padding:0;
+        background-color:#fff8f0;
+    }
 
-<hr>
+    header{
+        background-color:#ff8fab;
+        color:white;
+        text-align:center;
+        padding:20px;
+    }
 
-<!-- Home Section -->
-<section id="home">
-    <h1>Online Bakery Management System</h1>
+    nav{
+        background-color:#ffb3c6;
+        padding:10px;
+        text-align:center;
+    }
 
-    <p>
-        Welcome to Hellena's Bakery Hub. This website provides an
-        admin panel where the bakery owner can:
-    </p>
+    nav a{
+        text-decoration:none;
+        color:black;
+        margin:15px;
+        font-weight:bold;
+    }
 
-    <ul>
-        <li>Manage products</li>
-        <li>Update cake listings</li>
-        <li>Monitor customer orders</li>
-        <li>Track sales efficiently</li>
-    </ul>
-</section>
+    section{
+        padding:20px;
+    }
 
-<hr>
+    .gallery{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+        gap:15px;
+    }
 
- </section>
+    .gallery img{
+        width:100%;
+        height:200px;
+        object-fit:cover;
+        border-radius:10px;
+    }
 
-<hr>
+    footer{
+        background-color:#ff8fab;
+        color:white;
+        text-align:center;
+        padding:15px;
+        margin-top:20px;
+    }
+</style>
 
-<!-- Gallery Section -->
-<section id="gallery">
-    <h2>Our Bakery Gallery</h2>
-
-     <!-- Birthday Cake -->
-    <h2>Birthday Cakes</h2>
-    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" width="300">
-
-    <!-- Wedding Cake -->
-    <h2>Wedding Cakes</h2>
-    <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" width="300">
-
-    <!-- Cupcakes -->
-    <h2>Cupcakes</h2>
-    <img src="https://images.unsplash.com/photo-1509474520651-53cf6a1c3a6f" width="300">
-
-    <!-- Cookies -->
-    <h2>Cookies</h2>
-    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e" width="300">
-
-</section>
-
-<hr>
-
-<!-- Product Table -->
 <section id="products">
-   
-<!-- Product Table -->
-<section id="products">
-    <h2>Available Bakery Products</h2>
+    <h2>Our Products</h2>
 
-    <table border="1" cellpadding="8">
-        <tr>
-            <th>Product</th>
-            <th>Flavor</th>
-            <th>Price (KES)</th>
-        </tr>
+```
+<div class="gallery">
+    <div>
+        <img src="birthday-cake.jpg" alt="Birthday Cake">
+        <h3>Birthday Cakes</h3>
+        <p>Custom birthday cakes made with love for every celebration.</p>
+    </div>
 
-        <tr>
-            <td>Birthday Cake</td>
-            <td>Vanilla</td>
-            <td>1500</td>
-        </tr>
+    <div>
+        <img src="wedding-cake.jpg" alt="Wedding Cake">
+        <h3>Wedding Cakes</h3>
+        <p>Elegant wedding cakes designed to make your special day unforgettable.</p>
+    </div>
 
-        <tr>
-            <td>Cupcakes</td>
-            <td>Chocolate</td>
-            <td>100</td>
-        </tr>
+    <div>
+        <img src="cupcakes.jpg" alt="Cupcakes">
+        <h3>Cupcakes</h3>
+        <p>Freshly baked cupcakes available in a variety of flavors and designs.</p>
+    </div>
 
-        <tr>
-            <td>Wedding Cake</td>
-            <td>Red Velvet</td>
-            <td>5000</td>
-        </tr>
-
-        <tr>
-            <td>Cookies</td>
-            <td>Butter</td>
-            <td>50</td>
-        </tr>
-    </table>
-</section>
-
-<hr>
-
-<!-- Orders Section -->
-<section id="orders">
-    <h2>Customer Orders</h2>
-
-    <table border="1" cellpadding="8">
-        <tr>
-            <th>Order ID</th>
-            <th>Customer</th>
-            <th>Product</th>
-            <th>Status</th>
-        </tr>
-
-        <tr>
-            <td>001</td>
-            <td>Jane</td>
-            <td>Birthday Cake</td>
-            <td>Delivered</td>
-        </tr>
-
-        <tr>
-            <td>002</td>
-            <td>Mike</td>
-            <td>Cupcakes</td>
-            <td>Pending</td>
-        </tr>
-    </table>
-</section>
-
-<hr>
-
-<!-- Video Section -->
-<section id="video">
-    <h2>Bakery Showcase Video</h2>
-
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/Kt2y8ZhpPU0"
-        title="Hellena Bakery Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
-</section>
-
-<hr>
-
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: hellenasbakery@gmail.com</p>
-    <p>Phone: +254 700 000 000</p>
-</section>
+    <div>
+        <img src="cupcakes.jpg" alt="Cookies">
+        <h3>Cookies</h3>
+        <p>Sweet homemade cookies perfect for snacks, gifts, and events.</p>
+    </div>
+</div>
 ```
 
-</body>
-</html>
+</section>
+<section id="products">
+    <h2>Our Products</h2>
+
+```
+<div class="gallery">
+    <div>
+        <img src="birthday-cake.jpg" alt="Birthday Cake">
+        <h3>Birthday Cakes</h3>
+        <p>Custom birthday cakes made with love for every celebration.</p>
+    </div>
+
+    <div>
+        <img src="wedding-cake.jpg" alt="Wedding Cake">
+        <h3>Wedding Cakes</h3>
+        <p>Elegant wedding cakes designed to make your special day unforgettable.</p>
+    </div>
+
+    <div>
+        <img src="cupcakes.jpg" alt="Cupcakes">
+        <h3>Cupcakes</h3>
+        <p>Freshly baked cupcakes available in a variety of flavors and designs.</p>
+    </div>
+
+    <div>
+        <img src="cupcakes.jpg" alt="Cookies">
+        <h3>Cookies</h3>
+        <p>Sweet homemade cookies perfect for snacks, gifts, and events.</p>
+    </div>
+</div>
+```
+
+</section>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/Kt2y8ZhpPU0" title="Bakery Video" allowfullscreen> </iframe>
