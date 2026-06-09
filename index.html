@@ -7,32 +7,37 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fff0f5;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
             color: #333;
         }
 
         header {
-            background-color: #ff69b4;
-            color: white;
+            background-color: #ffb6c1;
             text-align: center;
             padding: 20px;
         }
 
-        /* Center Navigation */
+        header h1 {
+            margin: 0;
+        }
+
         nav {
-            background-color: #ffb6c1;
+            background-color: #ff69b4;
             text-align: center;
             padding: 15px;
         }
 
         nav a {
+            color: white;
             text-decoration: none;
-            color: black;
+            margin: 0 20px;
             font-weight: bold;
-            margin: 15px;
+        }
+
+        nav a:hover {
+            color: yellow;
         }
 
         section {
@@ -40,57 +45,68 @@
         }
 
         h2 {
-            color: #d63384;
             text-align: center;
+            color: #d63384;
         }
 
-        /* Additional List */
-        .list-container {
+        /* Lists Section */
+        .lists {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
         }
 
-        /* Full Page Table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: center;
+        .lists div {
+            margin: 10px;
         }
 
-        table th {
-            background-color: #ff69b4;
-            color: white;
-            padding: 12px;
-        }
-
-        table td {
-            background-color: #ffe4e1;
-            padding: 10px;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-        }
-
-        /* Images and Videos Grid */
+        /* Gallery Grid */
         .media-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
         }
 
         .media-grid img,
         .media-grid iframe {
             width: 100%;
-            height: 250px;
+            height: 300px;
             border-radius: 10px;
         }
 
-        footer {
+        /* Table Section */
+        .table-section {
+            background-color: #ffe4e1;
+            padding: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th {
             background-color: #ff69b4;
             color: white;
+            padding: 15px;
+        }
+
+        table td {
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 12px;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid #d63384;
+        }
+
+        footer {
+            background-color: #ffb6c1;
             text-align: center;
             padding: 15px;
             margin-top: 20px;
@@ -100,36 +116,39 @@
 
 <body>
 
+    <!-- Header -->
     <header>
         <h1>🍰 Hellena's Bakery Hub</h1>
         <p>Fresh Cakes, Cupcakes & Sweet Treats for Every Occasion</p>
     </header>
 
-    <!-- Centered Navigation -->
+    <!-- Navigation -->
     <nav>
         <a href="#home">Home</a>
         <a href="#products">Products</a>
-        <a href="#prices">Prices</a>
         <a href="#gallery">Gallery</a>
+        <a href="#prices">Prices</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Home -->
+    <!-- Home Section -->
     <section id="home">
         <h2>Welcome to Hellena's Bakery Hub</h2>
 
         <p>
-            We specialize in delicious custom cakes, cupcakes, and cookies made
-            with love for birthdays, weddings, graduations, anniversaries, and
-            other special occasions.
+            We specialize in delicious custom cakes, cupcakes, cookies,
+            and desserts made with love for birthdays, weddings,
+            graduations, anniversaries, and other special occasions.
+            Every order is carefully prepared to make your celebration
+            unforgettable.
         </p>
     </section>
 
-    <!-- Products -->
+    <!-- Product Lists -->
     <section id="products">
-        <h2>Our Bakery Products</h2>
+        <h2>Our Bakery Products & Services</h2>
 
-        <div class="list-container">
+        <div class="lists">
 
             <div>
                 <h3>Available Products</h3>
@@ -141,13 +160,12 @@
                 </ol>
             </div>
 
-            <!-- Additional List -->
             <div>
-                <h3>Our Services</h3>
+                <h3>Bakery Services</h3>
                 <ul>
-                    <li>Wedding Events</li>
-                    <li>Birthday Parties</li>
-                    <li>Corporate Events</li>
+                    <li>Wedding Cake Design</li>
+                    <li>Birthday Cake Decoration</li>
+                    <li>Corporate Orders</li>
                     <li>Home Delivery</li>
                 </ul>
             </div>
@@ -155,8 +173,41 @@
         </div>
     </section>
 
-    <!-- Full Width Table -->
-    <section id="prices">
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Bakery Gallery</h2>
+
+        <div class="media-grid">
+
+            <!-- Image 1 -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicFOXgsbJ-USOYuSnet6zvx05mPUiHDvWLg&s"
+                alt="Wedding Cake">
+
+            <!-- Image 2 -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgVL9EKbVo4ZksX-OZu_u525ElJmv3hzi_w&s"
+                alt="Birthday Cake">
+
+            <!-- Image 3 -->
+            <img src="https://alpineella.com/wp-content/uploads/2024/08/featured-image-mini-chocolate-cupcakes.jpg"
+                alt="Cupcakes">
+
+            <!-- Image 4 -->
+            <img src="https://bakewithshivesh.com/wp-content/uploads/2020/09/IMG-8129-1-scaled.jpg"
+                alt="Cookies">
+
+            <!-- YouTube Video -->
+            <iframe
+                src="https://www.youtube.com/embed/pKRM37VgVYw"
+                title="Bakery Video"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+    </section>
+
+    <!-- Price Table -->
+    <section id="prices" class="table-section">
+
         <h2>Hellena's Bakery Price List</h2>
 
         <table>
@@ -195,36 +246,20 @@
                 <td>Available</td>
             </tr>
         </table>
+
     </section>
 
-    <!-- Images and Videos Grid -->
-    <section id="gallery">
-        <h2>Bakery Gallery</h2>
+    <!-- Audio Section -->
+    <section>
+        <h2>Bakery Audio Message</h2>
 
-        <div class="media-grid">
-
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicFOXgsbJ-USOYuSnet6zvx05mPUiHDvWLg&s"
-                alt="Wedding Cake">
-
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgVL9EKbVo4ZksX-OZu_u525ElJmv3hzi_w&s"
-                alt="Birthday Cake">
-
-            <iframe
-                src="https://www.youtube.com/embed/WTROBQGu8S0"
-                title="Bakery Video"
-                allowfullscreen>
-            </iframe>
-
-            <iframe
-                src="https://www.youtube.com/embed/WTROBQGu8S0"
-                title="Bakery Video 2"
-                allowfullscreen>
-            </iframe>
-
-        </div>
+        <audio controls>
+            <source src="audio/bakery-jingle.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
 
@@ -234,6 +269,7 @@
         <p><strong>Location:</strong> Nairobi, Kenya</p>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Hellena's Bakery Hub. All Rights Reserved.</p>
     </footer>
