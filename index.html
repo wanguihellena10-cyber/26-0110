@@ -1,93 +1,199 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellena's Bakery Hub</title>
+</head>
 
-<header>
-    <h1>🍰 Hellena's Bakery Hub</h1>
-    <p>Fresh Cakes, Cupcakes & Sweet Treats for Every Occasion</p>
-</header>
+<body>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#video">Video</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- Header -->
+    <header>
+        <h1>🍰 Hellena's Bakery Hub</h1>
+        <p>Fresh Cakes, Cupcakes & Sweet Treats for Every Occasion</p>
+    </header>
 
-<section id="home">
-    <h2>Welcome to Our Bakery</h2>
-    <p style="text-align:center;">
-        At Hellena's Bakery Hub, we create delicious cakes and desserts
-        for birthdays, weddings, graduations and special events.
-    </p>
-</section>
+    <hr>
 
-<section id="products">
-    <h2>Our Products</h2>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#products">Products</a> |
+        <a href="#prices">Prices</a> |
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <hr>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Hellena's Bakery Hub</h2>
+
+        <p>
+            We specialize in delicious custom cakes, cupcakes, and cookies
+            made with love for birthdays, weddings, graduations, anniversaries,
+            and other special occasions. Every order is carefully prepared to
+            make your celebration unforgettable.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Products Section -->
     <section id="products">
-    <h2>Our Products</h2>
+        <h2>Our Bakery Products</h2>
 
-```
-<div class="gallery">
-    <div>
-        <img src="birthday-cake.jpg" alt="Birthday Cake">
-        <h3>Birthday Cakes</h3>
-        <p>Custom birthday cakes made with love for every celebration.</p>
-    </div>
+        <article>
+            <h3>Wedding Cake</h3>
+            <img src="images/wedding-cake.jpg"
+                 alt="Elegant Wedding Cake"
+                 width="350">
+            <p>
+                Beautiful multi-tier wedding cakes designed to add elegance
+                and sweetness to your special day.
+            </p>
+        </article>
 
-    <div>
-        <img src="wedding-cake.jpg" alt="Wedding Cake">
-        <h3>Wedding Cakes</h3>
-        <p>Elegant wedding cakes designed to make your special day unforgettable.</p>
-    </div>
+        <br>
 
-    <div>
-        <img src="cupcakes.jpg" alt="Cupcakes">
-        <h3>Cupcakes</h3>
-        <p>Freshly baked cupcakes available in a variety of flavors and designs.</p>
-    </div>
+        <article>
+            <h3>Birthday Cake</h3>
+            <img src="images/birthday-cake.jpg"
+                 alt="Chocolate Birthday Cake"
+                 width="350">
+            <p>
+                Delicious birthday cakes customized to suit your celebration
+                and favorite flavors.
+            </p>
+        </article>
 
-    <div>
-        <img src="cupcakes.jpg" alt="Cookies">
-        <h3>Cookies</h3>
-        <p>Sweet homemade cookies perfect for snacks, gifts, and events.</p>
-    </div>
-</div>
-```
+        <br>
 
-</section>
+        <article>
+            <h3>Cupcakes</h3>
+            <img src="images/cupcakes.jpg"
+                 alt="Red and White Cupcakes"
+                 width="350">
+            <p>
+                Freshly baked cupcakes available in a variety of flavors and
+                decorations for parties and events.
+            </p>
+        </article>
 
+        <br>
 
-       
-</section>
+        <article>
+            <h3>Cookies</h3>
+            <img src="images/cookies.jpg"
+                 alt="Homemade Cookies"
+                 width="350">
+            <p>
+                Tasty homemade cookies perfect for gifts, snacks,
+                and special occasions.
+            </p>
+        </article>
 
-<section id="video">
-    <h2>Watch Our Bakery Video</h2>
+    </section>
 
-    <div class="video">
+    <hr>
+
+    <!-- Product List -->
+    <section>
+        <h2>Available Products</h2>
+
+        <ol>
+            <li>Wedding Cake</li>
+            <li>Birthday Cake</li>
+            <li>Cupcakes</li>
+            <li>Cookies</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- Price Table -->
+    <section id="prices">
+        <h2>Price List</h2>
+
+        <table border="1">
+            <tr>
+                <th>No.</th>
+                <th>Product</th>
+                <th>Price (KES)</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Wedding Cake</td>
+                <td>10,000</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Birthday Cake</td>
+                <td>2,500</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Cupcakes</td>
+                <td>1,500</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Cookies</td>
+                <td>800</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Bakery Audio -->
+    <section>
+        <h2>Bakery Audio Message</h2>
+
+        <audio controls>
+            <source src="audio/bakery-jingle.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <hr>
+
+    <!-- Bakery Video -->
+    <section>
+        <h2>Watch Our Bakery Video</h2>
+
         <iframe
-            width="800"
-            height="450"
-            src="https://youtu.be/1CbzmrBep6A?si=3fjsMzCZFJQHbi5Q"
-            title="Bakery Video"
+            width="560"
+            height="315"
+            src="https://youtu.be/pKRM37VgVYw?si=-Joav1JXupdY8GAu"
+            title="Hellena's Bakery Video"
             allowfullscreen>
         </iframe>
-    </div>
-</section>
+    </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
+    <hr>
 
-    <div class="contact">
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
         <p><strong>Business Name:</strong> Hellena's Bakery Hub</p>
         <p><strong>Phone:</strong> +254 700 000 000</p>
         <p><strong>Email:</strong> hellenasbakery@gmail.com</p>
         <p><strong>Location:</strong> Nairobi, Kenya</p>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <p>&copy; 2026 Hellena's Bakery Hub. All Rights Reserved.</p>
-</footer>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hellena's Bakery Hub. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
