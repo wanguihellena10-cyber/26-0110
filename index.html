@@ -1,118 +1,152 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff8f0;
-    color: #333;
-}
-
-header {
-    background-color: #ffb6c1;
-    text-align: center;
-    padding: 20px;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav {
-    background-color: #ff69b4;
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: yellow;
-}
-
-section {
-    padding: 20px;
-}
-
-h2 {
-    text-align: center;
-    color: #d63384;
-}
-
-/* Lists Section */
-.lists {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.lists div {
-    margin: 10px;
-}
-
-/* Gallery Grid */
-.media-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.media-grid img,
-.media-grid iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-}
-
-/* Table Section */
-.table-section {
-    background-color: #ffe4e1;
-    padding: 30px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table th {
-    background-color: #ff69b4;
-    color: white;
-    padding: 15px;
-}
-
-table td {
-    background-color: #fff0f5;
-    text-align: center;
-    padding: 12px;
-}
-
-table,
-th,
-td {
-    border: 2px solid #d63384;
-}
-
-footer {
-    background-color: #ffb6c1;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hellena's Bakery Hub</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- The rest of your HTML remains unchanged -->
+
+    <!-- Header -->
+    <header>
+        <h1>🍰 Hellena's Bakery Hub</h1>
+        <p>Fresh Cakes, Cupcakes & Sweet Treats for Every Occasion</p>
+    </header>
+
+    <!-- Centered Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#prices">Prices</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <h2>Welcome to Hellena's Bakery Hub</h2>
+
+        <p>
+            We specialize in delicious custom cakes, cupcakes and cookies
+            for birthdays, weddings, graduations, anniversaries and many
+            other special occasions.
+        </p>
+    </section>
+
+    <!-- Two Lists -->
+    <section id="products">
+        <h2>Bakery Products</h2>
+
+        <div class="lists">
+
+            <div>
+                <h3>Available Products</h3>
+                <ol>
+                    <li>Wedding Cake</li>
+                    <li>Birthday Cake</li>
+                    <li>Cupcakes</li>
+                    <li>Cookies</li>
+                </ol>
+            </div>
+
+            <div>
+                <h3>Bakery Services</h3>
+                <ul>
+                    <li>Wedding Cake Design</li>
+                    <li>Birthday Decorations</li>
+                    <li>Corporate Orders</li>
+                    <li>Home Delivery</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Images and Videos Grid -->
+    <section id="gallery">
+        <h2>Bakery Gallery</h2>
+
+        <div class="media-grid">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicFOXgsbJ-USOYuSnet6zvx05mPUiHDvWLg&s"
+                 alt="Wedding Cake">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgVL9EKbVo4ZksX-OZu_u525ElJmv3hzi_w&s"
+                 alt="Birthday Cake">
+
+            <iframe
+                src="https://www.youtube.com/embed/WTROBQGu8S0"
+                title="Bakery Video"
+                allowfullscreen>
+            </iframe>
+
+            <img src="https://alpineella.com/wp-content/uploads/2024/08/featured-image-mini-chocolate-cupcakes.jpg"
+                 alt="Cupcakes">
+
+        </div>
+    </section>
+
+    <!-- Full Width Table -->
+    <section id="prices" class="table-section">
+
+        <h2>Hellena's Bakery Price List</h2>
+
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Product</th>
+                <th>Price (KES)</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Wedding Cake</td>
+                <td>10,000</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Birthday Cake</td>
+                <td>2,500</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Cupcakes</td>
+                <td>1,500</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Cookies</td>
+                <td>800</td>
+                <td>Available</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p><strong>Business Name:</strong> Hellena's Bakery Hub</p>
+        <p><strong>Phone:</strong> +254 700 000 000</p>
+        <p><strong>Email:</strong> hellenasbakery@gmail.com</p>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hellena's Bakery Hub. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
