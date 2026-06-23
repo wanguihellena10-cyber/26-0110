@@ -5,6 +5,8 @@ window.onload = function() {
     "🍰 Freshly Baked Cakes for Every Occasion 🍰\n\n" +
     "✨ Order Today & Enjoy Sweet Memories ✨\n\n" +
     "📞 Contact Us to Place Your Order!";
+
+   alert(message);
 };
 
 /* ── Registration Form Validation ── */
