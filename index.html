@@ -22,6 +22,7 @@
         <a href="#products">Products</a>
         <a href="#prices">Prices</a>
         <a href="#gallery">Gallery</a>
+        <a href="#register">Register</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -141,6 +142,43 @@
         <p><strong>Phone:</strong> +254 700 000 000</p>
         <p><strong>Email:</strong> hellenasbakery@gmail.com</p>
         <p><strong>Location:</strong> Nairobi, Kenya</p>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="register-section">
+        <h2>🎂 Customer Registration</h2>
+        <p style="text-align:center; color:#d63384;">Register to place orders and enjoy exclusive offers!</p>
+
+        <div class="form-container">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="example@email.com">
+                <small id="email-error" class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+254 700 000 000">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="gender-group">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="Other"> Other</label>
+                </div>
+            </div>
+
+            <button class="register-btn" onclick="validateForm()">Register Now 🍰</button>
+
+        </div>
     </section>
 
     <!-- Footer -->
