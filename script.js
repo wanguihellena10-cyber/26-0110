@@ -1,11 +1,10 @@
 /* ── Decorated Pop-Up on Page Load ── */
 window.onload = function() {
-    const message =
-        "🎉 Welcome to Hellena's Bakery Hub! 🎉\n\n" +
-        "🍰 ORDER NOW AND MAKE EVERY CELEBRATION SWEETER! 🍰\n\n" +
-        "✨ Fresh Cakes | Cupcakes | Cookies ✨";
-
-    alert(message);
+   const message =
+    "🎉 Welcome to Hellena's Bakery Hub! 🎉\n\n" +
+    "🍰 Freshly Baked Cakes for Every Occasion 🍰\n\n" +
+    "✨ Order Today & Enjoy Sweet Memories ✨\n\n" +
+    "📞 Contact Us to Place Your Order!";
 };
 
 /* ── Registration Form Validation ── */
