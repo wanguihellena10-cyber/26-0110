@@ -95,3 +95,95 @@ footer{
     padding:15px;
     margin-top:20px;
 }
+
+/* Registration Form */
+.register-section{
+    background-color:#fff0f5;
+    padding:40px 20px;
+}
+
+.form-container{
+    max-width:500px;
+    margin:auto;
+    background-color:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    border:2px solid #ff69b4;
+    box-shadow:0 4px 15px rgba(214, 51, 132, 0.2);
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:bold;
+    color:#d63384;
+    margin-bottom:6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"]{
+    width:100%;
+    padding:10px 14px;
+    border:2px solid #ffb6c1;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+    box-sizing:border-box;
+    transition:border 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus{
+    border-color:#ff69b4;
+}
+
+.gender-group{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.gender-group label{
+    font-weight:normal;
+    color:#333;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    cursor:pointer;
+}
+
+.gender-group input[type="radio"]{
+    accent-color:#ff69b4;
+    width:16px;
+    height:16px;
+}
+
+.error-msg{
+    color:red;
+    font-size:13px;
+    margin-top:4px;
+    display:block;
+}
+
+.register-btn{
+    width:100%;
+    padding:12px;
+    background-color:#ff69b4;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:10px;
+    transition:background-color 0.3s;
+}
+
+.register-btn:hover{
+    background-color:#d63384;
+}
